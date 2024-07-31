@@ -1,0 +1,69 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Ubuntu Mono", 'Ubuntu', sans-serif;
+}
+
+body {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	gap: 50px;
+	border: 50px groove indigo;
+	background: #aaa;
+}
+
+h1, button, .container{
+	border-radius: 10px;
+}
+
+h1 {
+	font-size: 4em;
+	color: #e5e5e5;
+	background: indigo;
+	margin-top: 50px;
+	padding: 10px 30px;
+}
+
+button {
+	font-size: 2em;
+	background: #e5e5e5;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.container {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	color: #fff;
+	min-height: 800px;
+	max-height: 800px;
+	width: 80%;
+	max-width: 1024px;
+	margin: 10px auto;
+	border: 10px groove #000;
+	flex; 100%;
+}
+
+
+.square {
+	width:12.5%;
+	background: indigo;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-self: stretch;
+	flex: 1 1 25%; 
+}
+
+.hovered{
+	background-color: hsl(from currentColor 180deg, 70%, 50%);
+	filter: hue-rotate(-90deg) contrast(125%);
+}
+
+.drawn{
+	background: hsl(from currentColor 90deg, 70%, 50%);
+	filter: saturate(125%) contrast(125%);
+}
